@@ -6,6 +6,7 @@ console.log('router is fetch');
 const homeController=require('../controllers/home_controller');
 router.get('/',homeController.home);
 //only yahi tkk
-// ye mera h
+// user wali file idhr attach krni h 
+router.use('/users',require('./users'));
 
 module.exports=router;    //import routes to use any where 
