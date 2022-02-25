@@ -3,9 +3,45 @@
         <title>
             <%= title %>
         </title>
-
+    <script src="https://kit.fontawesome.com/274f867545.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>SocialWEB/ <%= title %></h1>
+       <div id="outer">
+           <h1>TODO App</h1>
+           <form>
+               <div>
+               DESCRIPTION<input type="text" name="description" placeholder="What do you need to do?">
+               </div>
+               <div>
+                   CATEGORY<select id="Category" name="cat" placeholder="Choose a category">
+                    <option value="choose a category">Choose a category</option>
+                       <option value="personal">Personal</option>
+                       <option value="work">Work</option>
+                       <option value="school">School</option>
+                       <option value="cleaning">Cleaning</option>
+                       <option value="other">other</option>
+                   </select>
+               </div>
+               <div>
+                   DATE<input type="date" name="date">
+               </div>
+               <div>
+                   <button type="submit"><i class="fa-solid fa-plus"></i>ADD TASK</button>
+                   <button type="submit"><i class="fa-solid fa-trash-can"></i>DELETE TASK</button>
+               </div>
+               <div>
+                  <ul>
+                      <% for(i for todo_list){<%
+                        <li>
+                                <p><%=i.description%></p>
+                                <p><%=i.category%></p>
+                        </li>
+                        
+                        %>}
+                      %>
+                  </ul>
+               </div>
+           </form>
+       </div>
     </body>
 </html>
