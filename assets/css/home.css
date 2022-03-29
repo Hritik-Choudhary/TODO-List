@@ -1,0 +1,27 @@
+html{
+    background-color: gray;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 20%;
+    width: 50%;
+    border: 2px solid green;
+    background-color: white;
+}
+#heading{
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1%;
+}
+#description{
+
+    border-bottom: 1px solid lightgray;
+    margin-left: 3%;
+    padding-bottom: 2%;
+    
+}
+textarea{
+    margin: auto;
+}
